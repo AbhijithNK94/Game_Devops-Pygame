@@ -45,16 +45,16 @@ class Rock_paper_scissors:
 
 # Main Loop:
 def user_details():
-    name_user1 = input("User1 Please enter your name: ")
-    name_user2 = input("User2 Please enter your name: ")
+    name_user1 = input("USER-1 Please enter your name: ")
+    name_user2 = input("USER-2 Please enter your name: ")
     game_start = Rock_paper_scissors(name_user1, name_user2)
     return game_start
 
 game = user_details()
 
 def user_input():
-    user1_input = input("Input User1(r, p, s): ")
-    user2_input = input("Input user2(r, p, s): ")
+    user1_input = input("Input USER-1(r, p, s): ")
+    user2_input = input("Input USER-2(r, p, s): ")
     input_set = ["r", "p", "s"]
     if user1_input in input_set and user2_input in input_set:
         game.score(user1_input, user2_input)
